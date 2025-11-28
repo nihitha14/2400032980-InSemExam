@@ -1,63 +1,47 @@
-/* App.css */
-
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-  background-color: #f2f4f8; /* Light background */
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body {
+  margin: 0;
+  background: #f0f6ff;
+  font-family: system-ui, sans-serif;
 }
 
-/* Centering the login form container */
-.login-container {
-  background-color: #ffffff;
+.page {
+  max-width: 1100px;
+  margin: auto;
   padding: 2rem;
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
   border-radius: 12px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  width: 300px;
-}
-
-/* Heading styling */
-.login-container h2 {
   margin-bottom: 1.5rem;
-  color: #1a2b4c;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
-/* Input field styling */
-.login-container input {
-  width: 100%;
-  padding: 0.75rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1rem;
+h1 {
+  color: #002b5c;
 }
 
-/* Button styling */
-.login-container button {
-  width: 100%;
-  padding: 0.75rem;
-  background-color: #4a90e2;
-  color: white;
-  font-weight: bold;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+h2 {
+  color: #002b5c;
+  margin-top: 0;
 }
 
-.login-container button:hover {
-  background-color: #357ab8;
+h3 {
+  color: #004a99;
 }
 
-/* Optional: Add responsive behavior */
-@media (max-width: 400px) {
-  .login-container {
-    width: 90%;
-  }
+.faculty-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.faculty-card {
+  background: white;
+  border-left: 5px solid #0066cc;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
